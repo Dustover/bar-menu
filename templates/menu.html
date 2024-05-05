@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %} Меню {% endblock title%}
+{% block title %} Menu {% endblock title%}
 {% block content %}
 <main id="main">
    <!-- ======= Menu Section ======= -->
@@ -7,11 +7,12 @@
       <div class="container" data-aos="fade-up">
          <div class="section-title" style="margin-top: 75px">
             <h2>Меню</h2>
+            <p>Check Our Tasty Menu</p>
          </div>
          <div class="row" data-aos="fade-up" data-aos-delay="100">
             <div class="col-lg-12 d-flex justify-content-center">
                <ul id="menu-flters">
-                  <li data-filter="*" class="filter-active">Все</li>{% for category in categories %}
+                  <li data-filter="*" class="filter-active">All</li>{% for category in categories %}
                   <li data-filter=".filter-{{ category }}">{{ category }}</li>{% endfor %}
                </ul>
             </div>
